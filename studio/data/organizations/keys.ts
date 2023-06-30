@@ -8,4 +8,7 @@ export const organizationKeys = {
   customerProfile: (slug: string | undefined) =>
     ['organizations', slug, 'customer-profile'] as const,
   taxIds: (slug: string | undefined) => ['organizations', slug, 'tax-ids'] as const,
+  migrateBilling: (slug: string | undefined) => ['organizations', slug, 'migrate-billing'] as const,
+  migrateBillingPreview: (slug: string | undefined) =>
+    ['organizations', slug, 'migrate-billing', 'preview'] as const,
 }
